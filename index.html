@@ -72,7 +72,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="" target="_blank">Author1</a><sup>*,1</sup>,</span>
+                <a href="" target="_blank">ShiyiChen</a><sup>1</sup>,</span>
               <span class="author-block">
                 <a href="" target="_blank">Author2</a><sup>*,1,2</sup>,</span>
               <span class="author-block">
@@ -80,7 +80,7 @@
             </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>University1,</span>
+                    <span class="author-block"><sup>1</sup>Chengdu University of Technology,</span>
                     <span class="author-block"><sup>2</sup>University2,</span>
                     <span class="author-block"><sup>3</sup>University3,</span>
                   </div>
@@ -149,12 +149,12 @@
                 muted
                 preload
                 playsinline height="100%">
-      <source src="./static/videos/demo.mp4"
+      <source src="./static/videos/main.mp4"
                 type="video/mp4">
       </video>
     </div>
       <h2 class="subtitle has-text-centered">
-        Hello World!
+        Without relying on any privileged information, we can train a sufficiently robust motor strategy. In actual deployment, the quadruped robot can cross a variety of challenging terrain.
     </div>
   </div>
 </section>
@@ -182,14 +182,13 @@
       <h3 class="title is-4">Framework Pipeline</h3>
     </div>
     <div class="content has-text-centered">
-      <img width="60%" src="./static/images/alg.png">
+      <img width="60%" src="./static/images/net.png">
     </div>
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          Our goal is to build a 1 stage end-to-end unprivileged information system that uses ontology sensors to measure and control joint motion. Different from traditional privileged learning methods, our approach allows robots to learn to code autonomously without relying on privileged information, as shown in the figure.
-Among them, the input of the encoder is the observation history oHt composed of the ontological perception information ot of the first N moments, and the output is the potential representation zt of the observation history. The input of the control strategy (Actor) is the observation ot of the current ontology perception information and the potential representation of the environment zt, and the output of the strategy is the joint position at, which is used for the subsequent PD controller to calculate the output torque. The input of Critic network is the same as the policy, the output state value, and the policy and Critic network are updated by PPO algorithm. The state transition model simulates the real state transition of the environment, and the network structure of the encoder is the same, the input is the potential representation zt and the action at, and the output is the potential representation \tiled{zt+1} at the next moment. 
+          Our goal is to construct a one-stage end-to-end system without privileged information, utilizing proprioceptive sensors to measure and control joint movements. Unlike traditional privileged learning methods, our approach enables the robot to autonomously encode information without relying on privileged data.
         </div>
       </div>
     </div>
@@ -202,13 +201,13 @@ Among them, the input of the encoder is the observation history oHt composed of 
 <section class="section">
   <div class="container is-max-desktop">
 
-    <h3 class="title is-4">video 1.</h3>
+    <h3 class="title is-4">Robot goes down the mountain steps.</h3>
     <div class="columns is-centered">
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/a1_3kg_ball.mp4"
+            <source src="./static/videos/down_mountain.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -219,13 +218,13 @@ Among them, the input of the encoder is the observation history oHt composed of 
 <section class="section">
   <div class="container is-max-desktop">
 
-    <h3 class="title is-4">video 2.</h3>
+    <h3 class="title is-4">Jamming the robot up the stairs.</h3>
     <div class="columns is-centered">
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/a1_5kg_ball.mp4"
+            <source src="./static/videos/kickdog.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -236,13 +235,13 @@ Among them, the input of the encoder is the observation history oHt composed of 
 <section class="section">
   <div class="container is-max-desktop">
 
-    <h3 class="title is-4">video 3.</h3>
+    <h3 class="title is-4">Robot climbs stairs naturally.</h3>
     <div class="columns is-centered">
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/a1_push.mp4"
+            <source src="./static/videos/nature_up_staris.mp4"
                     type="video/mp4">
           </video>
         </div>
