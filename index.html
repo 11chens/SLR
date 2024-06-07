@@ -78,11 +78,11 @@
               <span class="author-block">
                 <a href="https://openreview.net/profile?id=~Zeyu_Wan2" target="_blank">Zeyu Wan</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://openreview.net/profile?id=~Shiyang_Yan3" target="_blank">Shiyang Yan</a><sup>1</sup>,</span>
+                <a href="https://openreview.net/profile?id=~Shiyang_Yan3" target="_blank">Shiyang Yan</a><sup>1,</sup></span>
               <span class="author-block">
                 <a href="https://www.sic.tsinghua.edu.cn/en/info/1086/1470.htm" target="_blank">Chun Zhang</a><sup>†,1</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=pQiJ8GAAAAAJ&hl=en&oi=sra" target="_blank">Weiyi Zhang</a><sup>1</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=pQiJ8GAAAAAJ&hl=en&oi=sra" target="_blank">Weiyi Zhang</a><sup>1</sup>,</span> <br>
               <span class="author-block">
                 <a href="https://sites.google.com/site/qiangliresearch/qiang-li-s-homepage" target="_blank">Qiang Li</a><sup>†,2</sup>,</span>
               <span class="author-block">
@@ -148,13 +148,15 @@
                 muted
                 preload
                 playsinline height="100%">
-      <source src="./static/videos/main_noauther.mp4"
+      <source src="./static/videos/main.mp4"
                 type="video/mp4">
       </video>
       <div>
         <br>
         <h2 class="subtitle has-text-centered">
-          <strong>Without</strong> relying on any <strong>privileged</strong> or <strong>visual</strong> information, we can train a <strong>robust</strong> locomotion policy. In real-world deployment, the quadruped robot is capable of traversing various challenging terrains.
+          <div class="content has-text-justified">
+            <strong>Without</strong> relying on any <strong>privileged</strong> or <strong>visual</strong> information, we can train a <strong>robust</strong> locomotion policy. In real-world deployment, the quadruped robot is capable of traversing various challenging terrains.
+          </div>
         </h2>
       </div>
   </div>
@@ -185,14 +187,16 @@
     <div class="content has-text-centered">
       <img width="60%" src="./static/images/net.png">
     </div>
-
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          The proposed training framework fully leverages the Markov Decision Process, guiding the latent's self-learning based on state transitions, state distinctions, and cumulative rewards, without relying on manually set privileged information constraints. 
+          <div style="max-width: 700px; margin: 0 auto;">
+            The SLR training framework leverages the Markov Decision Process, guiding the latent's self-learning based on state transitions, state distinctions, and cumulative rewards (Critic), without relying on manually set privileged information constraints. 
+          </div>
         </div>
       </div>
     </div>
+    
 
       </div>
     </div>
